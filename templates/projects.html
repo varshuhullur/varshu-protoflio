@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<div class="page-container">
+    <div class="page-header">
+        <span class="page-tag">My Work</span>
+        <h1 class="page-title">Recent Projects</h1>
+    </div>
+
+    <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+            <div class="project-img-placeholder"></div>
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">Flask</span>
+                    <span class="project-tag">SQLite</span>
+                </div>
+                <h3>E-Commerce Platform REST API</h3>
+                <p>
+                    A complete backend engine for a digital store featuring token-based authentication, product management, database transactions, shopping carts, and order processing.
+                </p>
+                <a href="https://github.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                    View Project Code &rarr;
+                </a>
+            </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+            <div class="project-img-placeholder"></div>
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">OpenAI API</span>
+                    <span class="project-tag">JS</span>
+                </div>
+                <h3>AI Content Dashboard</h3>
+                <p>
+                    A web app that generates articles, handles image recognition and processes summarization requests. Connects to OpenAI APIs with asynchronous celery task queues.
+                </p>
+                <a href="https://github.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                    View Project Code &rarr;
+                </a>
+            </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+            <div class="project-img-placeholder"></div>
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">WebSockets</span>
+                    <span class="project-tag">Flask-SocketIO</span>
+                </div>
+                <h3>Real-Time Analytics App</h3>
+                <p>
+                    Real-time traffic and operations analytics dashboard with live chart updates, user connection logs, and customizable warning notifications.
+                </p>
+                <a href="https://github.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                    View Project Code &rarr;
+                </a>
+            </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+            <div class="project-img-placeholder"></div>
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">Docker</span>
+                    <span class="project-tag">SQLite</span>
+                </div>
+                <h3>DevOps Monitor Tool</h3>
+                <p>
+                    A server status monitoring script checking system resources, memory usage, CPU thresholds, and SQLite activity, reporting alerts straight to Discord webhooks.
+                </p>
+                <a href="https://github.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                    View Project Code &rarr;
+                </a>
+            </div>
+        </article>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<div class="page-container">
+    <div class="page-header">
+        <span class="page-tag">Get in Touch</span>
+        <h1 class="page-title">Contact Me</h1>
+    </div>
+
+    <div class="contact-container">
+        <!-- Left: Contact Details -->
+        <div class="contact-info">
+            <h2>Let's build something great.</h2>
+            <p>
+                Whether you have an upcoming project, a job opportunity, or just want to chat about Python backend development and clean web design, feel free to drop a message!
+            </p>
+
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-icon">📧</div>
+                    <div class="info-details">
+                        <h4>Email</h4>
+                        <p>contact@johndoeportfolio.com</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <div class="info-details">
+                        <h4>Location</h4>
+                        <p>San Francisco, California</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">🕒</div>
+                    <div class="info-details">
+                        <h4>Response Time</h4>
+                        <p>Within 24 business hours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-wrapper">
+            <form id="portfolioContactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Project Discussion" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Tell me more about your project goals..." required></textarea>
+                </div>
+
+                <button type="submit" class="form-submit-btn">Send Message</button>
+                
+                <!-- Submission feedback container -->
+                <div class="form-feedback" id="formFeedback"></div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

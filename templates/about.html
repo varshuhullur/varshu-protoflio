@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}About Me{% endblock %}
+
+{% block content %}
+<div class="page-container">
+    <div class="page-header">
+        <span class="page-tag">Who I Am</span>
+        <h1 class="page-title">About Me</h1>
+    </div>
+
+    <div class="about-grid">
+        <!-- Text details -->
+        <div class="about-text">
+            <h2>Creative Full-Stack Web Developer</h2>
+            <p>
+                I am a passionate software developer focused on designing and building elegant, performant, and premium web applications. By blending solid MVC backend architectures with modern frontend user interfaces, I create digital experiences that function seamlessly and look stunning.
+            </p>
+            <p>
+                With background knowledge in clean code practices, security principles, and scalable system designs, I approach problem-solving with a thorough and analytical mindset. I enjoy turning complex problems into simple, beautiful, and intuitive code designs.
+            </p>
+            
+            <div class="about-details">
+                <div class="detail-item">
+                    <h4>Current Role</h4>
+                    <p>Senior Full-Stack Developer</p>
+                </div>
+                <div class="detail-item">
+                    <h4>Location</h4>
+                    <p>San Francisco, CA</p>
+                </div>
+                <div class="detail-item">
+                    <h4>Email</h4>
+                    <p>contact@johndoeportfolio.com</p>
+                </div>
+                <div class="detail-item">
+                    <h4>Education</h4>
+                    <p>B.S. in Computer Science</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Metric Graphics Box -->
+        <div class="about-graphic">
+            <div class="graphic-box">
+                <span>5+</span>
+            </div>
+            <h3>Years of Experience</h3>
+            <p style="color: var(--text-secondary); margin-top: 0.5rem; max-width: 250px;">
+                Developing robust enterprise software and pixel-perfect customer interfaces.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

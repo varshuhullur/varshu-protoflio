@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block page_class %}home-page{% endblock %}
+
+{% block content %}
+<section class="split-hero">
+    <!-- Left Pane: Navy Theme with Typography -->
+    <div class="hero-left">
+        <!-- Top Right Paragraph Info -->
+        <div class="hero-top-info">
+            <p>
+                Highly motivated full-stack engineer and designer specialized in building premium web architectures, responsive client interfaces, and robust backend systems using python, flask, and modern frameworks.
+            </p>
+        </div>
+
+        <!-- Center Large Title & CTA -->
+        <div class="hero-title-container">
+            <h1 class="hero-title">
+                <span>PORTFOLIO</span>
+                <span>PROFILE</span>
+            </h1>
+            <a href="/projects" class="hero-cta-btn">View My Work</a>
+        </div>
+
+        <!-- Bottom URL & Social Links -->
+        <div class="hero-bottom-info">
+            <div class="hero-url">www.johndoeportfolio.com</div>
+            <div class="hero-socials">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Pane: Glass Skyscraper Image -->
+    <div class="hero-right">
+        <div class="hero-image-wrapper">
+            <img src="/images/hero.png" alt="Modern Glass Skyscraper" class="hero-image">
+        </div>
+    </div>
+</section>
+{% endblock %}

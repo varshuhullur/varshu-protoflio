@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio Web Application showing projects, certifications, skills, achievements, and contact.">
+    <meta name="author" content="John Doe">
+    <title>Portfolio - {% block title %}{% endblock %}</title>
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="/css/style.css">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <a href="/" class="logo">PORTFOLIO</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/" class="{% if active_page == 'home' %}active{% endif %}">Home</a></li>
+                <li><a href="/about" class="{% if active_page == 'about' %}active{% endif %}">About</a></li>
+                <li><a href="/projects" class="{% if active_page == 'projects' %}active{% endif %}">Projects</a></li>
+                <li><a href="/certifications" class="{% if active_page == 'certifications' %}active{% endif %}">Certifications</a></li>
+                <li><a href="/skills" class="{% if active_page == 'skills' %}active{% endif %}">Skills</a></li>
+                <li><a href="/achievements" class="{% if active_page == 'achievements' %}active{% endif %}">Achievements</a></li>
+                <li><a href="/contact" class="{% if active_page == 'contact' %}active{% endif %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Dynamic Content -->
+    <main class="main-content {% block page_class %}{% endblock %}">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Portfolio. All rights reserved. Created as per MVC model with Flask and SQLite.</p>
+        </div>
+    </footer>
+
+    <!-- Main Javascript File -->
+    <script src="/js/main.js"></script>
+    {% block extra_scripts %}{% endblock %}
+</body>
+</html>
